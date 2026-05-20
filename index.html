@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio-Rechner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Portfolio-Rechner</h1>
+    <p>Berechne Gewinn, Verlust und Performance deiner Investmentposition.</p>
+
+    <input id="name" placeholder="Asset, z. B. NVIDIA">
+    <input id="buyPrice" type="number" min="0" placeholder="Kaufpreis pro Stück">
+    <input id="currentPrice" type="number" min="0" placeholder="Aktueller Preis pro Stück">
+    <input id="quantity" type="number" min="1" placeholder="Anzahl">
+
+    <button onclick="calculate()">Berechnen</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
